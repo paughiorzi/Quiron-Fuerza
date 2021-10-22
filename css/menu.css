@@ -1,0 +1,66 @@
+
+.marginDerecho {
+    margin-right: 0;
+}
+.sectionComienzoDelGym {
+    color: black;
+    background-color: rgba(31, 31, 31, 0.596);
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 1em 1em;
+    border-radius: o.125em;
+    grid-template-areas: 
+    "comienzoDelGym comienzoDelGym sideBar"
+    "comienzoDelGym comienzoDelGym sideBar"
+    "comienzoDelGym comienzoDelGym sideBar"; 
+}
+.comienzoDelGym { grid-area: comienzoDelGym; }
+.sideBar { grid-area: sideBar; }
+
+
+
+@media only screen and (min-width : .75em) and (max-width : 37.5em) {
+    
+    table {
+        width: 100%;
+        font-size: .85em;
+    }
+    table tr {
+        display: flex;
+        flex-direction: column;
+    }
+    table td[data-titulo]{
+        display: flex;
+    }
+    table td[data-titulo]::before{
+        content: attr(data-titulo);
+        width: 6em;
+        color:rgb(141, 141, 141);
+        font-weight: bold;
+    }
+    table thead {
+        display: none;
+    }
+    .sectionComienzoDelGym { 
+        /* en pantallas de celulares el aside pasara abajo del article */
+        grid-template-areas: 
+            "comienzoDelGym comienzoDelGym comienzoDelGym"
+            "comienzoDelGym comienzoDelGym comienzoDelGym"
+            "sideBar sideBar sideBar";
+    }
+    .comienzoDelGym { grid-area: comienzoDelGym; }
+    .sideBar { grid-area: sideBar; }
+    .sideBar, .comienzoDelGym {
+        text-align: justify;
+        padding: 2em;
+        margin-bottom: 0.125em;
+    }
+    body {
+        padding: 0.125em;
+        margin: 0.125em;
+    }
+    .quironFuerza {
+        margin: .5em;
+    }
+}

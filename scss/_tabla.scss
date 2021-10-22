@@ -1,0 +1,63 @@
+/* sectionTurnos.html */
+@import "_constante.scss";
+table {
+    border: 2px solid rgb(255, 255, 255);
+    background: $colorOrange;
+    border-radius: 10px;
+}
+.horario, th {
+    background: $colorOrange;
+    border: 1px solid rgb(255, 255, 255);
+}
+tr, td {
+    border: 1px solid rgb(255, 255, 255);
+}
+.tabla {
+    border-radius: 2em;
+    &__horario {
+        font-size: 1.3em;
+        text-align: center;        
+        &--light {
+            font-weight: bolder;
+            color: $colorOrange;
+        }
+        &--dark {
+            color: rgb(0, 0, 0);
+        
+        }
+    }
+}
+
+.cabeza {
+    padding: 0;
+    text-align: center;
+    &__quiron {
+        color: $colorOrange;
+        font-weight: bolder;
+        &--grande {
+            font-size: 2em;
+        }
+        &--chico {
+            font-size: 1,5em;
+        }
+    }
+}
+
+/* sectionNosotros.html */
+.articulo {
+    background-color: rgba(112, 112, 112, 0.246);
+    border-radius: 1em;
+    &__parrafo {
+        font-size: 1em;
+        &--grande {
+        padding-left: 0;
+    }
+    &--mediano {
+        padding-left: 0.5em;
+        
+    }
+    &--chico {
+        padding-left: 1em;
+        }
+    }
+}

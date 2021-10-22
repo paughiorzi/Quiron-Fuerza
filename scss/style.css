@@ -1,0 +1,208 @@
+/* sectionTurnos.html */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border: 2px solid white;
+  background: #ff9100;
+  border-radius: 10px;
+}
+
+.horario, th {
+  background: #ff9100;
+  border: 1px solid white;
+}
+
+tr, td {
+  border: 1px solid white;
+}
+
+.tabla {
+  border-radius: 2em;
+}
+
+.tabla__horario {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.tabla__horario--light {
+  font-weight: bolder;
+  color: #ff9100;
+}
+
+.tabla__horario--dark {
+  color: black;
+}
+
+.cabeza {
+  padding: 0;
+  text-align: center;
+}
+
+.cabeza__quiron {
+  color: #ff9100;
+  font-weight: bolder;
+}
+
+.cabeza__quiron--grande {
+  font-size: 2em;
+}
+
+.cabeza__quiron--chico {
+  font-size: 1,5em;
+}
+
+/* sectionNosotros.html */
+.articulo {
+  background-color: rgba(112, 112, 112, 0.246);
+  border-radius: 1em;
+}
+
+.articulo__parrafo {
+  font-size: 1em;
+}
+
+.articulo__parrafo--grande {
+  padding-left: 0;
+}
+
+.articulo__parrafo--mediano {
+  padding-left: 0.5em;
+}
+
+.articulo__parrafo--chico {
+  padding-left: 1em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section {
+  color: white;
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 0.125em;
+  margin: 0.2em;
+  border-radius: 0.2em;
+  background-color: rgba(31, 31, 31, 0.39);
+}
+
+section h1 {
+  color: #ff9100;
+  text-align: center;
+  font-weight: 800;
+  font-size: 2em;
+  padding: 0.3em;
+}
+
+section p {
+  font-size: 1.3em;
+  line-height: 1.5em;
+  font-weight: normal;
+  color: white;
+  text-align: justify;
+  margin-left: 0.6em;
+  margin-right: 0.6em;
+}
+
+.sideBar {
+  color: #252525;
+  background-color: #ff9100;
+  padding: 1em;
+  border-radius: 0.3em;
+  text-align: right;
+}
+
+.sideBar h1 {
+  color: black;
+}
+
+.sideBar__titulo {
+  text-align: center;
+}
+
+.sideBar__titulo--ppal {
+  font-weight: bold;
+}
+
+.sideBar__titulo--sec {
+  font-weight: bolder;
+}
+
+.reglasBasicas h1 {
+  color: #ff9100;
+  font-weight: 400;
+}
+
+.reglasBasicas h4 {
+  padding-top: 1.2em;
+  font-size: 1.2em;
+}
+
+.logoQuiron {
+  background: -webkit-gradient(linear, right top, left top, from(#ff9100), to(black));
+  background: linear-gradient(to left, #ff9100, black);
+  padding: .1em;
+  padding-right: .55em;
+  margin-left: .7em;
+  border-radius: 1.4em;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.logoQuiron:hover {
+  -webkit-transform: scale(1.1, 1.1) !important;
+          transform: scale(1.1, 1.1) !important;
+}
+
+.pieDePagina {
+  margin: 0;
+  text-align: left;
+  font-size: 1.05em;
+  padding: 0.2em;
+}
+
+.carritoDeCompras {
+  padding: 2em;
+  margin: 0;
+  font-size: medium;
+}
+
+#showProd {
+  padding: 0em;
+  margin: 0;
+  font-size: medium;
+}
+
+.tarjeta {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+.tarjeta .nameProd {
+  font-size: 1.6em;
+}
+/*# sourceMappingURL=style.css.map */

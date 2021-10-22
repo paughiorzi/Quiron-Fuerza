@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register</title>
+    <meta name="description" content="Registrarse, Ingresar">
+    <meta name="keywords"  content="Registrarse, Loguin, Register, Ingresar, Gimnasio">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../2css/bootstrap.min.css">
+    <link rel="stylesheet" href="../scss/style.css">
+    <link rel="stylesheet" href="../css/menu.css">
+  </head>
+<body class="container">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark rounded ">
+        <a class="navbar-brand cabeza__quiron cabeza__quiron--grande logoQuiron" href="../index.html">QUIRON Fuerza</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> 
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="./sectionNosotros.html">Nosotros <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sectionTurnos.html">Turnos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./SectionContacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sectionLogin.html">Login/Register</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="row marginDerecho ">
+      <div class="col-md-7 col-sm-12 d-none d-sm-none d-md-block">
+        <img class="col-md-12" src="../assets/hombre suspendido.jpg" alt="hombre arrojando pelota">
+      </div>
+      <div class="col-md-5 col-sm-12 p-md-4">
+        <form method="POST" class="mb-4">
+       <legend>Ingresa</legend>
+       <div class="form-group mb-4">
+         <label for="usuario" class="form-label">Usuario</label>
+         <input class="form-control" type="text" name="usuario" placeholder="Usuario">
+       </div>
+       <div class="form-group">
+         <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+       </div>
+       <br>
+       <div>
+         <input class="btn btn-primary" type="reset" value="Limpiar">
+         <input class="btn btn-primary" type="submit" value="Enviar">
+       </div>
+        </form>
+        <br>
+        <form method="POST" class="mb-4">
+        <legend>Registrate</legend>
+         <div class="form-group mb-4">
+           <label for="apellido" class="form-label">Apellido</label>
+           <input class="form-control" type="text" name="apellido" placeholder="Apellido">
+         </div>
+         <div class="form-group mb-4">
+           <label for="nombre" class="form-label">Nombre</label>
+           <input class="form-control" type="text" name="nombre" placeholder="Nombre">
+         </div>
+         <div class="form-group mb-4">  
+           <label for="email" class="form-label">Mail</label>
+           <input class="form-control" type="email" name="email" placeholder="Email">
+         </div>
+         <div class="form-group mb-4">
+           <label for="usuario" class="form-label">Usuario</label>
+           <input class="form-control" type="text" name="usuario" placeholder="Usuario">
+         </div>
+         <div class="form-group mb-4">
+           <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+           <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+         </div>
+         <br>
+         <div>
+           <input class="btn btn-primary" type="reset" value="Limpiar">
+           <input class="btn btn-primary" type="submit" value="Enviar">
+         </div>
+        </form>
+      </div>
+      <br>
+      <br>
+    </section>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-dark text-muted pieDePagina">
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Conectate con nosotros en redes sociales:</span>
+        </div>
+        <!-- Left -->
+      
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+    
+      <!-- Section: Links  -->
+      <section>
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-dumbbell"></i> QUIRON Fuerza
+              </h6>
+              <p class="pieDePagina">
+                - En el polvo de la derrota y en los laureles de la victoria, se puede encontrar gloria si uno dio su mejor esfuerzo. - <strong>Eric Liddell</strong>
+              </p>
+            </div>
+            <!-- Grid column -->
+          
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Productos
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Ropa</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Rutinas</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Merchandaising</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+          
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Links utiles
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Sedes</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Planes</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Novedades</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Solicitar Baja</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+          
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Contact
+              </h6>
+              <p class="pieDePagina"><i class="fas fa-home me-3"></i>Calle 70 N° 1386 e/ 22 y 23, La Plata.</p><p>
+              <p class="pieDePagina"><i class="fas fa-envelope me-3"></i>info@quiron.com</p>
+              <p class="pieDePagina"><i class="fas fa-phone me-3"></i> + 54 221 5687 188</p>
+              <p class="pieDePagina"><i class="fas fa-print me-3"></i> + 54 221 5687 829</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="../2js/bootstrap.min.js"></script>
+  </body>
+</html>
