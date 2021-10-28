@@ -34,13 +34,17 @@ const buildTarjeta=(paquete)=>{
 }
 
 let paquetesNube = JSON.parse(localStorage.getItem(`paquetes`))
+localStorage.setItem("paquetesCarrito", JSON.stringify(paquetesNube))
+let carritoNube = JSON.parse(localStorage.getItem("paquetesCarrito"));
 
 
 const show=()=>{
-    for(paquete of paquetesNube){
+    divPaquete.innerHTML = ""
+    for(paquete of carritoNube){
         divPaquete.appendChild(buildTarjeta(paquete));         
     }
 }
+
 
 $(document).ready(function() {
     const APIURL="https://jsonplaceholder.typicode.com/posts" ;

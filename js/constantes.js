@@ -7,6 +7,7 @@ class Paquete {
         this.turns = turns;
         this.price = price;
         this.dispo = dispo;
+        this.cantidad = 0;
     }
 }
 let paquetes = [];

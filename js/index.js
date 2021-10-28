@@ -13,36 +13,29 @@ function contratar(){
     let qtyCarr = arr.find(input => input.name == $(this).attr('id'))
 
         addToCart (Number($(this).attr('id')[$(this).attr('id').length-1]), qtyCarr.value);
-        // if (cart>0){
-        //     console.log (`Su compra tiene un total de $${cart}`);
-        // } else{
-        // alert("Tiene que ingresar un valor numerico");
-        // }
+
     }
 
 
 // CARRITO
 
+
 let cart = 0;
-let paquetesCarrito="";
 
 const addToCart = (option, qty)=> {
-    let found = paquetesNube.find(paquete => paquete.id === option)
-
+    let found = carritoNube.find(paquete => paquete.id === option)
     if(inStock(option, qty)){
+        let input = Number(document.getElementById(found.name).value)
         cart += (qty * found.price);
-        found.dispo=found.dispo-qty; /* descuento de lo q se lleva, en el stock */
-        
-        alert (`Su paquete: ${found.name} fue agregado a la cuenta`);
-        console.log (`Usted contrato: ${qty}-> ${found.name}, ${found.service}, ${found.turns}.`);
-        
-        paquetesCarrito += qty+" "+found.name+", "+found.service+", "+found.turns + "." + " <br>";   
-        localStorage.setItem("paquetesCarrito", JSON.stringify(paquetesCarrito));
+        found.cantidad = found.cantidad + input
+        found.dispo = found.dispo - input
+        localStorage.setItem("paquetesCarrito", JSON.stringify(carritoNube))
+        show()
     }
 }
 
 const inStock = (option, qty) => {
-    let stock = paquetesNube.find(paquete => paquete.id === option).dispo;
+    let stock = carritoNube.find(paquete => paquete.id === option).dispo;
     if(qty>stock){
         alert (`No tenemos stock, el maximo disponible es ${stock}`);
         return false;
@@ -53,15 +46,38 @@ $("#terminarCompra").click((e) => {
     e.preventDefault()
 
     localStorage.setItem("carrito",JSON.stringify(cart));
-    let carritoNube = JSON.parse(localStorage.getItem("carrito"));
-    let paquetesNube = JSON.parse(localStorage.getItem("paquetesCarrito"));
-    if (carritoNube>0){
-        console.log("total del carrito: $" + carritoNube);
-        /* console.log(paquetesCarrito); */
-        $("#carrito").append(`${paquetesNube}`);
-        $("#total").append(`${cart}`);
-     alert (`Su compra tiene un total de $${cart}`);
-     show(paquetesNube);
+    let carritoNube = JSON.parse(localStorage.getItem("paquetesCarrito"));
+    if (cart>0){
+        
+        for(let prod of carritoNube){
+            if(prod.cantidad > 0)
+            {
+                $("#carrito").append(`${prod.cantidad} - ${prod.name} <br>`);
+            }
+        }
+        $("#total")[0].innerHTML = (`${cart}`);
+         
+Swal.fire('Agregado al carrito')
+     show();
     }
-   else alert("Tiene que ingresar un valor numerico");
+   else 
+   Swal.fire({
+    icon: 'error',
+    title: 'Oops...',
+    text: 'Debes ingresar un valor numerico!',
+    footer: 'Tal vez no estes presionando el botón "contratar Paquete..." luego de ingresar la cantidad'
+  })
 });
+
+$("#comprar").click(function(){
+    if(cart!==0){
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Compra realizada',
+            showConfirmButton: false,
+            timer: 1500
+          })
+    }
+    
+})

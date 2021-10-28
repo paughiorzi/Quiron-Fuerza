@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../2css/bootstrap.min.css">
+    <link rel="stylesheet" href="D:\14. AJAX con JQuery\sweetalert2.min.css">
     <link rel="stylesheet" href="../scss/style.css">
     <link rel="stylesheet" href="../css/menu.css">
   </head>
@@ -19,6 +20,7 @@
     <script src="../js/constantes.js" defer></script>
     <script src="../js/funciones.js" defer></script>
     <script src="../js/index.js" defer></script>
+    <script src="D:\14. AJAX con JQuery\sweetalert2.all.min.js" defer></script>
     <header>
         <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark rounded ">
           <a class="navbar-brand cabeza__quiron cabeza__quiron--grande logoQuiron" href="../index.html">QUIRON Fuerza</a>
@@ -57,7 +59,7 @@
                     <hr>
                     <!-- Precio total -->
                     <p class="text-right">Total: &dollar;<span id="total"></span></p>
-                    <button type="submit" value="Comprar" class="btn btn-danger">Comprar</button>
+                    <button type="submit" value="Comprar" id="comprar" class="btn btn-danger">Comprar</button>
             </div>
         </div>
           <img class="col-md-12" src="../assets/anillas.jpg" alt="chica descansando agarrada de las anillas">
@@ -71,22 +73,22 @@
           <div class="form-group mb-4">
             
           <label for="paqueteUno">Cantidad de:</label>
-          <input type="number" class="qty mb-2 form-control" name="paquete1" placeholder="Paquete 1">
+          <input type="number" class="qty mb-2 form-control" id="Paquete Basico UNO" name="paquete1" placeholder="Paquete 1">
           <input class="btn btn-primary mb-2" id="paquete1" type="submit" value="contratar Paquete Basico UNO">
           </div>
           <div class="form-group mb-4">
           <label for="paqueteDos">Cantidad de:</label>
-          <input type="number" class="qty mb-2 form-control" name="paquete2" placeholder="Paquete 2">
+          <input type="number" class="qty mb-2 form-control" id="Paquete Basico DOS" name="paquete2" placeholder="Paquete 2">
           <input class="btn btn-primary mb-2" id="paquete2" type="submit" value="contratar Paquete Basico DOS">
           </div>
           <div class="form-group mb-4">
           <label for="paqueteTres">Cantidad de:</label>
-          <input type="number" class="qty mb-2 form-control" name="paquete3" placeholder="Paquete 3">
+          <input type="number" class="qty mb-2 form-control" id="Paquete Premium UNO" name="paquete3" placeholder="Paquete 3">
           <input class="btn btn-primary mb-2" id="paquete3" type="submit" value="contratar Paquete Premium UNO">
           </div>
           <div class="form-group mb-4">
           <label for="paqueteCuatro">Cantidad de:</label>
-          <input type="number" class="qty mb-2 form-control" name="paquete4" placeholder="Paquete 4">
+          <input type="number" class="qty mb-2 form-control" id="Paquete Premium DOS" name="paquete4" placeholder="Paquete 4">
           <input class="btn btn-primary mb-2" id="paquete4" type="submit" value="contratar Paquete Premium DOS">
           </div>
           <!-- TERMINAR COMPRA -->
