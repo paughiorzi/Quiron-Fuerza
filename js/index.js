@@ -79,5 +79,4 @@ $("#comprar").click(function(){
             timer: 1500
           })
     }
-    
 })

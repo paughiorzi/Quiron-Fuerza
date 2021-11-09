@@ -48,6 +48,8 @@
     <section>
       <section class="row marginDerecho">
         <div class="col-md-7 col-sm-12 d-none d-sm-none d-md-block">
+          <img class="col-md-12" src="../assets/anillas.jpg" alt="chica descansando agarrada de las anillas">
+
           <div class="container carritoDeCompras">
             <div class="row">
                 <!-- Elementos generados a partir del JSON -->
@@ -62,8 +64,22 @@
                     <button type="submit" value="Comprar" id="comprar" class="btn btn-danger">Comprar</button>
             </div>
         </div>
-          <img class="col-md-12" src="../assets/anillas.jpg" alt="chica descansando agarrada de las anillas">
-        
+          <form method="POST" class="mb-4">
+            <br>
+            <legend>Suscribite!</legend>
+            <div class="form-group mb-4">
+             <label for="nombre">Nombre completo</label>
+             <input class="form-control" type="text" name="nombre" placeholder="Nombre" id="nombre">
+            </div>
+            <div class="form-group mb-4">  
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingrsa tu email">
+              <small id="emailHelp" class="form-text text-muted">Nunca vamos a compartir tu información con alguien más.</small>
+            </div id=respa>
+              <input class="btn btn-primary" type="reset" value="Limpiar">
+              <input class="btn btn-primary" type="submit" value="Enviar" id="btnSend">
+            </div>
+          </form>
         </div>
         <div class="col-md-5 col-sm-12 p-md-4">
 
@@ -95,23 +111,6 @@
           <input class="btn btn-danger mb-2" id="terminarCompra" type="submit" value="Enviar al Carrito">
           <small id="emailHelp" class="form-text text-muted"> Si seleccionas mas de 1 Paquete, mandanos por mail los datos de los que haran uso de los mismos.</small>
 ​
-
-          <form method="POST" class="mb-4">
-            <br>
-            <legend>Suscribite!</legend>
-            <div class="form-group mb-4">
-             <label for="nombre">Nombre completo</label>
-             <input class="form-control" type="text" name="nombre" placeholder="Nombre" id="nombre">
-            </div>
-            <div class="form-group mb-4">  
-              <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingrsa tu email">
-              <small id="emailHelp" class="form-text text-muted">Nunca vamos a compartir tu información con alguien más.</small>
-            </div id=respa>
-              <input class="btn btn-primary" type="reset" value="Limpiar">
-              <input class="btn btn-primary" type="submit" value="Enviar" id="btnSend">
-            </div>
-          </form>
         </div>
     </section>
     <!-- Footer -->
